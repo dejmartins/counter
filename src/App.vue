@@ -1,6 +1,9 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <CounterComponent/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">
+  <CounterComponent/> -->
+  <router-view>
+    <CounterComponent/>
+  </router-view>
 </template>
 
 <script>
