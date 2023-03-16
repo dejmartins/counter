@@ -6,11 +6,20 @@
              Counters are generally classified as either synchronous or asynchronous. 
              In synchronous counters, all flip-flops share a common clock and change state at the same time. 
              In asynchronous counters, each flip-flop has a unique clock, and the flip-flop states change at different times.</p>
+             <button>Reset</button>
     </div>
     <div>
-
+        <Button title="Increase" />
+        <Button title="Increase" />
+        <Button title="Increase" />
     </div>
 </template>
 <script>
-
+import Button from "../components/Button.vue"
+export default {
+    components:{ Button }
+}
 </script>
+
+<style scoped>
+</style>

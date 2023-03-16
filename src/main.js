@@ -2,24 +2,28 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/main.css";
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "@/view/Home.vue";
-import Error404 from "@/view/ErrorPage.vue";
+import Home from "@/views/Home.vue";
+import ErrorPage from "@/views/ErrorPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/",
+      path: "/counter",
       name: "Home",
       component: Home,
     },
     {
-      path: "*",
-      name: "Error",
+      path: "/",
+      redirect: "/counter",
+    },
+    {
+      path: "/:catchAll(.*)",
+      name: "ErrorPage",
       meta: { title: `Page not found` },
-      component: Error404,
+      component: ErrorPage,
     },
   ],
 });
 
-createApp(App).mount("#app");
+createApp(App).use(router).mount("#app");
