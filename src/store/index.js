@@ -1,7 +1,6 @@
 import { createStore } from "vuex";
 import { counter } from "../composables/counter";
 
-// Vue.use(VueX);
 const { count, increment, decrement, reset } = counter();
 const store = createStore({
   state: {
@@ -17,6 +16,14 @@ const store = createStore({
   actions: {
     increment({ commit }) {
       commit("increment");
+    },
+
+    decrement({ commit }) {
+      commit("decrement");
+    },
+
+    reset({ commit }) {
+      commit("reset");
     },
   },
 
