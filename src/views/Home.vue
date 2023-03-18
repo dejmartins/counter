@@ -107,9 +107,14 @@ p strong{
 
 @media (max-width: 600px){
     .bottom-container {
-        width: 100px;
+        border: 0.5px solid rgb(131, 131, 131);
+        border-radius: 10px;
         display: flex;
         flex-direction: column;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        align-items: center;
     }
 }
 

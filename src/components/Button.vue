@@ -32,8 +32,12 @@ p {
 }
 
 @media (max-width: 600px){
-    .p {
+    p {
         text-align: center;
+    }
+
+    div {
+        margin-bottom: 20px;
     }
 }
 </style>
