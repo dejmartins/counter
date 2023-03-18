@@ -12,10 +12,10 @@
                      <input placeholder="30" type="number"/>
                  </div>
         </div>
-        <div class="bottom container">
+        <div class="bottom-container">
+            <p><strong>{{ count }}</strong></p>
             <Button title="Increase" :onClick="increment"/>
             <Button title="Decrease" :onClick="decrement"/>
-            <p>{{ count }}</p>
         </div>
     </div>
 </template>
@@ -61,15 +61,13 @@ strong{
 
 .top-container{
     color: black;
-    width: 60%;
+    width: 100%;
     padding: 20px;
 }
 
 .reset-container{
     margin-top: 12px;
-    max-width: 35%;
     display: flex;
-    justify-content: space-between;
 }
 
 input {
@@ -91,7 +89,21 @@ input:focus {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 4px;
+    margin-right: 7px;
     background-color: rgb(245, 252, 245);
 }
+
+.bottom-container{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+    padding-left: 20px;
+}
+
+p strong{
+    font-size: 100px;
+}
+
 
 </style>
