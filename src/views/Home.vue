@@ -9,7 +9,7 @@
                  In asynchronous counters, each flip-flop has a unique clock, and the flip-flop states change at different times.</p>
                  <div class="reset-container">
                      <button @click="reset" >Reset</button>
-                     <input placeholder="30" type="number"/>
+                     <input placeholder="23" type="number"/>
                  </div>
         </div>
         <div class="bottom-container">
