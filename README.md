@@ -1,30 +1,5 @@
 # counter
 
-This template should help get you started developing with Vue 3 in Vite.
+A vue js application where I implemented a counter composable with increment, decrement, reset, setValue functions. I practiced state management using vuex. Also, I housed my functionalities in a page with route - ‘/counter’. Any other route would redirect the user to a 404 page handled by a wildcard route.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-# counter
+[Hosted on Netlify](https://counterbydej.netlify.app/counter)

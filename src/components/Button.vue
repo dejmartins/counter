@@ -19,6 +19,7 @@ button {
     height: 100px;
     width: 100px;
     cursor: pointer;
+    margin: 0 5px 0 5px;
 }
 
 button:active{
