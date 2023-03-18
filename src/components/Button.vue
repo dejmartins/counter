@@ -30,4 +30,10 @@ p {
     text-align: center;
     font-weight: bold;
 }
+
+@media (max-width: 600px){
+    .p {
+        text-align: center;
+    }
+}
 </style>

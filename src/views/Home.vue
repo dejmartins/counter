@@ -105,5 +105,13 @@ p strong{
     font-size: 100px;
 }
 
+@media (max-width: 600px){
+    .bottom-container {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 </style>
