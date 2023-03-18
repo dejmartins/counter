@@ -4,6 +4,7 @@ import "./assets/main.css";
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
 import ErrorPage from "@/views/ErrorPage.vue";
+import store from "./store";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -26,4 +27,4 @@ const router = createRouter({
   ],
 });
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).use(store).mount("#app");
